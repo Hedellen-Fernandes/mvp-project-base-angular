@@ -3,7 +3,7 @@ import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { InputTypeInterface } from './models/input-type.interface';
 
 @Component({
-  selector: 'app-inputs',
+  selector: 'inputs',
   templateUrl: './inputs.component.html',
   styleUrls: ['./inputs.component.scss']
 })
