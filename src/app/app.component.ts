@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InputTypeInterface } from './ui/inputs/models/input-type.interface';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mvp-project-base';
+  inputType = InputTypeInterface;
 }

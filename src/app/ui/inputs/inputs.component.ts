@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { decimalDigest } from '@angular/compiler/src/i18n/digest';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { InputTypeInterface } from './models/input-type.interface';
 
 @Component({
@@ -8,16 +9,15 @@ import { InputTypeInterface } from './models/input-type.interface';
 })
 export class InputsComponent implements OnInit {
 
-  @Input() typeInput: InputTypeInterface = InputTypeInterface.text;
-  @Input() disabledInput: Boolean = false;
+  @Input() inputType: InputTypeInterface = InputTypeInterface.text;
+  @Input() inputDisabled: Boolean = false;
   @Input() isValid: Boolean = true;
-  @Input() placeholderInput: String = '';
-  @Input() labelInput: String = '';
-  @Input() idInput: String = '';
+  @Input() inputPlaceholder: String = '';
+  @Input() inputLabel: String = '';
+  @Input() inputId: String = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
